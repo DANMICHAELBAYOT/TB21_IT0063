@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAYOT_TSA2</title>
+</head>
+<center>
+
+    <body background="bg3.jpg" marginwidth="300px">
+        <img src="FEU-TECH-Seal.webp" alt="feutech" height="250">
+        <Font face="Arial" size=" 7" color="green" align=" up"><sup>
+                <h1>ADVISORY</h1>
+            </sup></Font>
+        <font face=" Arial">
+            <font size="5">
+                <h2>Online Synchronous Classes on May 2 and 3, 2024</h2>
+            </font>
+            <font size = "4">
+            <p>Please be informed that online synchronous classes will be held on<font color = "green"> <strong>May 2 and 3, 2024. </strong></font>These classes
+                will be conducted via our designated online learning platform according to the regular schedule.</p>
+
+            <p>Kindly ensure that you are logged in and ready to participate at the specified times for your respective
+                courses. Your attendance and engagement are crucial for the success of these sessions.</p>
+
+            <font color ="green"><strong><p>Thank you for your cooperation and commitment to your academic pursuits.</p></strong></font>
+            </font>
+            <font size =" 2">
+            <p align = "right">Technology Driven by Innovation</p>
+            <p align = "right">#theSchoolOfInnovation</p>
+            </font>
+        </font>
+</center>
+</body>
