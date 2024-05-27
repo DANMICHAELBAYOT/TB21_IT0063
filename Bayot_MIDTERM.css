@@ -1,0 +1,145 @@
+*{padding: 0%;margin: 0%;}
+body{
+    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2023/11/cute-pokemon-pikachu-rain-desktop-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.container{
+    
+    height: auto;
+    width: 80vw;
+    
+    margin: 10vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 1em;
+    row-gap: 1em;
+    
+}
+h1{
+    display: none;
+}
+.label{
+    display: none;
+}
+
+.box{
+
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    transition: 1s;
+    
+}
+img{
+   flex-grow: inherit;
+    
+}
+.pokeBall{
+    display: none;
+}
+#box1{
+background-color: rgb(48, 139, 230);
+
+}
+#box2{
+    background-color: rgb(253, 128, 4);
+}
+#box3{
+    background-color: rgb(234, 155, 37);
+}
+#box4{
+    background-color: rgb(36, 218, 27);
+}
+#box5{
+    background-color: rgb(190, 124, 10);
+}
+#box6{
+    background-color: rgb(219, 203, 25);
+}
+#box7{
+    background-color: rgb(24, 176, 223);
+}
+#box8{
+    background-color: rgb(36, 218, 27);
+}
+#box9{
+    background-color: rgb(50, 119, 183);
+}
+#box10{
+    background-color: rgb(161, 27, 218);
+}
+#box11{
+    background-color: rgb(232, 221, 10);
+}
+#box12{
+    background-color: rgb(232, 221, 10);
+}
+@media(max-width:1165px){
+    .container{
+       flex-direction: column;
+    }
+    .box{
+
+        width: 100%;
+        
+       
+    }
+    
+    img{
+        height: 300px;
+        width: 300px;
+        
+        
+    }
+    .label{
+        display: flex;
+        font-family: sans-serif;
+        font-size: 80px;
+        text-align: center;
+        color: white;
+        align-items:center;
+        
+        
+    }
+    .box:hover{
+        background-image: url(https://wallpaperaccess.com/full/3551101.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+    }
+    
+}
+@media(max-width:935px){
+    .box{
+        height:600px ;
+        flex-direction: column;
+        
+        
+    }
+    img{
+        height: 70% ;                    
+        width: 70%;
+        align-self: center;
+
+    }
+    .container{
+        flex-wrap: nowrap;
+    }
+    
+    
+  
+
+}
