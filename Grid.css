@@ -1,0 +1,94 @@
+*{padding: 0%; margin: 0; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.area{
+    display: grid;
+    /* border:3px solid black; */
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    height: 60%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    display: flex;
+    /* border: 5px solid red; */
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+  align-items: center;
+  
+   
+    
+}
+body{
+    background-image: url(https://wallpaperaccess.com/full/3551101.png);
+    background-repeat: no-repeat;
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img{ 
+    width: 200px;
+}
+#box1{
+    grid-column: 1 / 3;
+    background-color: rgb(33, 191, 240);
+}#box2{
+   background-color: rgb(237, 230, 15);
+   color: black;
+}
+#box3{
+   grid-row: span 2;
+   background-color: rgb(174, 108, 33);
+}
+#box4{
+    background-color: rgb(223, 108, 20);
+}
+#box5{
+    grid-column:  span 2;
+    background-color: aqua;
+}
+.name{
+    font-weight: 700;
+   font-size: 2rem;
+}
+.power{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.info{
+    text-align: justify;
+    font-size: 1rem;
+}
+
+
+
+@media (max-width: 960px) {
+    .area{
+
+         flex-direction: column;
+         grid-template-columns: 1fr ;
+    }
+    .box{
+        flex-grow: inherit
+    }
+    #box1{ 
+        grid-column: span 2;
+    }
+    #box2{ 
+        grid-column: span 2;
+    }
+    #box3{ 
+        grid-column: span 2;
+    }
+    #box4{ 
+        grid-column: span 2;
+    }
+    #box5{ 
+        grid-column: span 2;
+    }
+}
