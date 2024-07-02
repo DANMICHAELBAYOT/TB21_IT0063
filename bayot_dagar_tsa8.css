@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://w0.peakpx.com/wallpaper/139/53/HD-wallpaper-tetris-pattern-tetris-blocks-blue-bricks-build-c0y0te7-game-gameboy-gamer-gaming-greey-neon-nintendo-pattern-purple-turquoise-video-viedo-game.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/*overall div for controls*/
+.controls {
+    display: flex;
+    flex-direction: row;
+    border: black;
+    justify-content: center;
+}
+
+/*presentation grounds*/
+.boxarea {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 10px;
+    height: 25vw;
+    width: 90%;
+    align-self: center;
+    background-image: url("https://play-lh.googleusercontent.com/ILMYT7PYDpF1771O6lixyX01a3JEGYKotMshaq6rFFxQnZPGb_byVbfgMZRJlG4pITJPfqoUC0g=w1296-h2160-rw");
+    background-repeat: no-repeat;
+    background-size: 100vw 25vw;
+}
+
+/*.box1, .box2, .box3*/
+.box1, .box2, .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 2rem sans-serif;
+    height: 75px;
+    width: 75px;
+    color: white;
+}
+
+.box1 {
+    background-color: blue;
+}
+
+.box2 {
+    background-color: red;
+}
+
+.box3 {
+    background-color: green;
+}
+
+/*first part*/
+.container {
+    padding: 40px;
+    border: rgb(0, 0, 0);
+}
+
+.section0 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.counter {
+    margin: 7px;
+    display: flex;
+}
+
+.section1 {
+    
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    width: 45px;
+    margin: 5px;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    width: 45px;
+    margin: 5px;
+}
+
+/*second part*/
+.area {
+    padding: 40px;
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.b1 {
+    display: grid;
+    gap: 7px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+/*third part*/
+.grow {
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+/*classes*/
+.button {
+    width: 200px;
+    background-color: #589df7;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    gap: 7px;
+    border-radius: 7px;
+}
+
+.button1 {
+    background-color: #589df7;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    gap: 7px;
+    width: auto;
+    border-radius: 7px;
+}
+.input{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    gap: 7px;
+    width: auto;
+    border-radius: 7px;
+}
+
+h1{
+    color: white;
+    font-family: Arial;
+    font-weight: 900;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
