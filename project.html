@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+   width: 100%;
+   height: 75px;
+   line-height: 75px;
+   padding: 0 100px;
+   position: fixed;
+   background-image: linear-gradient(#033747, #012733);
+}
+
+nav .logo {
+   font-size: 30px;
+   font-weight: bold;
+   float: left;
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   cursor: pointer;
+}
+
+nav ul {
+   float: right;
+}
+
+nav li {
+   display: inline-block;
+   list-style: none;
+}
+
+nav li a {
+   font-size: 18px;
+   text-transform: uppercase;
+   padding: 0 30px;
+   color: white;
+   text-decoration: none;
+}
+
+nav li a:hover {
+   color: #ff8c69;
+   transition: all 0.4% ease 0%;
+}
+body{
+    background-image: url(img/—Slidesdocs—simple\ business\ technology\ clean\ blue_cc0e2bd450.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto 50px;
+            padding: 20px;
+            padding-top: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: sans-serif;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .pset {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .prog {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .prog img {
+            max-width: 100%;
+            
+            border-radius: 5px;
+        }
+
+        .prog p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            
+            color: black;
+        }
+
+        .prog:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .pgimag{height: 220px;}
+
+        @media (max-width: 1024px) {
+            .prog {
+                width: 45%; /* Adjusted width for medium screens */
+            }
+            body{
+                background-size: cover;
+                background-repeat: repeat;
+            }
+        }
+
+        @media (max-width: 805px) {
+            .pset {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .prog {
+                width: 80%; /* Adjusted width for smaller screens */
+            }
+
+            nav {
+                padding: 0 20px; /* Adjusted padding for smaller screens */
+            }
+            .pgimag{height: 400px;}
+
+           
+        }
+
+        @media (max-width: 480px) {
+            .prog {
+                
+                width: 100%; /* Adjusted width for extra small screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Portfolio</div>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/aboutpage.html">About</a></li>
+            <li><a href="http://127.0.0.1:5500/project.html">Projects</a></li>
+            <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Projects</h1>
+        <div class="pset">
+            <div class="prog">
+                <a href="https://danmichaelbayot.github.io/it0043tb02/Bayot_MIDTERM.html">
+                    <img src="img/Screenshot (2).png" alt="" class="pgimag">
+                    <p>Midterm</p>
+                </a>
+            </div>
+            <div class="prog">
+                <a href="https://danmichaelbayot.github.io/it0043tb02/bayot_tsa7.html">
+                    <img src="img/Screenshot (1).png" alt="">
+                    <p>Technical7</p>
+                </a>
+            </div>
+            <div class="prog">
+                <a href="https://danmichaelbayot.github.io/it0043tb02/bayot_dagar_tsa8.html">
+                    <img src="img/screanshot 3.png" alt="" class="pgimag">
+                    <p>Technical8</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

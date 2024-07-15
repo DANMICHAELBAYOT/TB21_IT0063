@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    nav{
+        width: 100%;
+        height: 75px;
+        line-height: 75px;
+        padding: 0 100px;
+        position: fixed;
+        background-image: linear-gradient(#033747,#012733);
+    }
+    nav .logo{
+        font-size: 30px;
+        font-weight: bold;
+        float: left;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+    }
+    nav ul{
+        float: right;
+    }
+    nav li{
+        display: inline-block;
+        list-style: none;
+    }
+    nav li a{
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    nav li a:hover{
+        color: #ff8c69;
+        transition: all 0.4% ease 0%;
+    }
+    /* body */
+    body{
+    
+        background-image: url(img/jake-hills-mI02K_LxlfU-unsplash.jpg);
+    
+      /* Full height */
+      height: 100%;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: auto;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin: 0 100px ;
+        padding-top: 70px;
+       height: 50vw;
+        width: auto;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5px;
+    }
+    
+    .photo{
+        align-self: center;
+        width: 500px;
+        height: 500px;
+         background-image: url("img/1.jpg");
+         background-position: center;
+         border-radius:500px;
+         
+    }
+    
+    
+    .self{
+        width: 500px;
+        height: 500px;
+        border-radius:500px;
+    }
+    .text{
+    align-self: center;
+    font-size: 4rem;
+    
+    }
+    .text p {
+        
+        font-size: 2.5rem;
+    }
+    
+    .text h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+    
+    .blue-text {
+        color:#033747;
+        font-size: 4rem;
+    }
+    
+    .hire-button {
+        font-family: sans-serif;
+        height: 50px;
+        width: 120px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #70A288;
+        border: none;
+        border-radius: 10px;
+        color: black;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    .hire-button:hover {
+        background-color: #C8E0F4;;
+    }
+    
+    
+    /* respansive */
+    @media (max-width:1250px) {
+        .photo{
+            
+            width: 300px;
+            height: 300px;
+             border-radius:300px;
+        }
+        
+        
+        .self{
+            width: 300px;
+            height: 300px;
+            border-radius:300px;
+        }
+    
+    
+        
+        .text{
+           
+            font-size: 3rem;
+            
+            }
+            .text p {
+                
+                font-size: 2rem;
+            }
+            
+            .text h1 {
+                font-size: 3rem;
+        
+            }
+            
+            .blue-text {
+    
+                font-size: 3rem;
+            }
+    }
+    @media (max-width:930px) {
+        .container{
+            flex-direction: column;
+            height: auto;
+            padding: 80px;
+        }
+        nav ul{
+            display: none;
+        }
+        
+    }
+    @media (max-width:717px) {
+        .photo{
+            
+            width: 250px;
+            height: 250px;
+             border-radius:250px;
+        }
+        
+        
+        .self{
+            width: 250px;
+            height: 250px;
+            border-radius:250px;
+        }
+    
+    
+        
+        .text{
+           
+            font-size: 2.5rem;
+            
+            }
+            .text p {
+                
+                font-size: 1.5rem;
+            }
+            
+            .text h1 {
+                font-size: 2.5rem;
+        
+            }
+            
+            .blue-text {
+    
+                font-size: 2.5rem;
+            }
+    }
+    @media (max-width:660px) {
+    
+        .text{
+           
+            font-size: 2rem;
+            
+            }
+            .text p {
+                
+                font-size: 1rem;
+            }
+            
+            .text h1 {
+                font-size: 2rem;
+        
+            }
+            
+            .blue-text {
+    
+                font-size: 2rem;
+            }
+    }
+    @media (max-width:601px) {
+        .text{
+           
+            font-size: 1.5rem;
+            
+            }
+            .text p {
+                
+                font-size: .7rem;
+            }
+            
+            .text h1 {
+                font-size: 1.5rem;
+        
+            }
+            
+            .blue-text {
+    
+                font-size: 1.5rem;
+            }
+    }</style>
+<body>
+    <nav>
+        <div class="logo">
+            <p>Portfolio</p>
+        </div>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/aboutpage.html">About</a></li>
+            <li><a href="http://127.0.0.1:5500/project.html">Projects</a></li>
+            <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+        </ul>
+     </nav>
+    <div class="container">
+        <div class="photo">
+            <img src="./img/Untitled-removebg-preview.png" alt="" class="self">
+        </div>
+        <div class="text">
+            <p>Hello,</p>
+            <h1>I'm Dan Michael</h1>
+            <h2 class="blue-text">A Programmer</h2>
+            <p>from  The Philippines</p>
+            <button class="hire-button" >About Me</button>
+        </div>
+
+
+
+
+
+
+        <!--<div class="image-section">
+            <div class="photo"></div>
+        </div> -->
+
+    </div> 
+</body>
+
+</html>

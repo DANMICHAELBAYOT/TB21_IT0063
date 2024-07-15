@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    * {
+   padding: 0%;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+nav {
+   width: 100%;
+   height: 75px;
+   line-height: 75px;
+   padding: 0 100px;
+   position: fixed;
+   background-image: linear-gradient(#033747, #012733);
+}
+
+nav .logo {
+   font-size: 30px;
+   font-weight: bold;
+   float: left;
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   cursor: pointer;
+}
+
+nav ul {
+   float: right;
+}
+
+nav li {
+   display: inline-block;
+   list-style: none;
+}
+
+nav li a {
+   font-size: 18px;
+   text-transform: uppercase;
+   padding: 0 30px;
+   color: white;
+   text-decoration: none;
+}
+
+nav li a:hover {
+   color: #ff8c69;
+   transition: all 0.4% ease 0%;
+}
+
+
+body{
+    background-image: url(img/—Slidesdocs—simple\ business\ technology\ clean\ blue_cc0e2bd450.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .con1{
+    display: flex;
+    flex-direction: row;
+    margin: 0 100px ;
+    padding-top: 70px;
+    height: 50vw;
+    width: auto;
+ }
+.a1{
+
+    height: 100%;
+    width: 50%;
+  background-image: url(img/me1-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.a2{
+    padding: 50px;
+    height: 100%;
+    width: 50%;
+    
+  
+}
+.info{
+   padding: 10px;
+    background-color: #033747;
+    opacity: 10;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 3px;
+}
+.int{
+   font-family: sans-serif;
+   color: white;
+   font-size: 2rem;
+}
+.ina{
+   color: white;
+   font-family: sans-serif;
+   font-size: 1rem;
+   text-align: justify;
+
+}
+ .con2{
+    border:black solid 2px;
+    border-radius: 10px;
+    background-color: #033747;
+    margin: 0 100px ;
+    height: fit-content;
+    width: auto;
+    color:white
+
+ }
+ .tskill{
+   font-family: sans-serif;
+    text-align: center;
+    font-size: 4rem;
+ }
+ .li{
+   font-family: sans-serif;
+   margin: 20px 0;
+   padding: 10px;
+   list-style: none;
+ }
+ .bar{
+   background: #353b48;
+   display: block;
+   height: 20px;
+   border: 1px solid rgba(0, 0, 0, 0.3);
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+   transition: all 0.3s cubic-bezier(0.25, .8, 0.25, 1);
+ }
+ .bar:hover{
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+ }
+ .bar span{
+   height: 20px;
+   float: left;
+   background: linear-gradient(135deg,rgba(236, 0, 140, 1),rgba(252,103,103,1)100%);
+ }
+ .html{
+   width: 50%;
+   animation: html 3%;
+ }
+ .css{
+   width: 50%;
+   animation: css 3%;
+ }
+ .c{
+   width: 50%;
+   animation: c 3%;
+ }
+
+@media (max-width:1130px) {
+   .ina{font-size: .9rem;}
+   
+}
+@media (max-width:1080px) {
+   .ina{
+      font-size: .8rem;
+   }
+   
+}
+@media (max-width:998px) {
+   .ina{font-size: .7rem;}
+}
+@media (max-width:965px) {
+   .ina{font-size: .6rem;}
+}
+@media (max-width:930px) {
+    nav ul{display:none}
+   
+}
+@media (max-width:905px) {
+   .con1{
+
+      flex-direction: column;
+      height: 1500px;
+   }
+   .a1{
+      width: 100%;
+   }
+   .a2{
+      width: 100%;
+   }
+  .ina{
+
+   font-size: 1rem;
+  }
+  
+}
+
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <p>Portfolio</p>
+        </div>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/aboutpage.html">About</a></li>
+            <li><a href="http://127.0.0.1:5500/project.html">Projects</a></li>
+            <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+        </ul>
+     </nav>
+
+    <div class="con1">
+        <div class="a1">
+
+        </div>
+        <div class="a2">
+            <div class="info">
+                <h3 class="int">About me</h3><br>
+                <p class="ina">I am a passionate programmer with a solid foundation in HTML and CSS, driven by a relentless curiosity for solving complex problems and crafting elegant solutions through code. Over the course of 1 year, I have immersed myself in web design, mastering the art of creating intuitive and responsive websites that blend creativity with functionality. My journey has been enriched by collaborative environments where I thrive, contributing my programming skills effectively to team projects. Beyond coding, I am deeply committed to continuous learning, eagerly exploring cutting-edge technologies to stay ahead in the ever-evolving field of web development. My goal is not only to build robust applications but also to push the boundaries of what's possible in digital experiences.</p>
+            </div>
+        </div>
+    </div>
+    <div class="con2">
+        <h1 class="tskill">Skills</h1>
+        <li class="li"><h2>HTML</h2>
+            <span class="bar"><span class="html"></span></span>
+        </li>
+        <li class="li"><h2>CSS</h2>
+            <span class="bar"><span class="css"></span></span>
+        </li>
+        <li class="li"><h2>C++</h2>
+            <span class="bar"><span class="c"></span></span>
+        </li>
+
+    </div>
+</body>
+</html>

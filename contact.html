@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMwoaM6ka4xZ4J5niK0S5HxUba9xjodsiR6FMFb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 100px;
+    position: fixed;
+    background-image: linear-gradient(#033747, #012733);
+    align-self: baseline;
+}
+
+nav .logo {
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #ff8c69;
+    transition: all 0.4% ease 0%;
+}
+
+body {
+    background-image: url(img/—Slidesdocs—simple\ business\ technology\ clean\ blue_cc0e2bd450.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #033747;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #033747;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.social-media a {
+    color: #033747;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-media a img {
+    margin-right: 10px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+}
+@media (max-width:930px) {
+    ul{display: none;}
+    
+}
+</style>
+<body>
+    <nav>
+        
+            <div class="logo">Portfolio</div>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/aboutpage.html">About</a></li>
+                <li><a href="http://127.0.0.1:5500/project.html">Projects</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+            </ul>
+    
+    </nav>
+    <div class="container">
+        <h1>Contact Information</h1>
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td>
+                    <img src="https://img.icons8.com/ios-filled/24/033747/phone.png" alt="Phone" class="contact-icon">
+                    09398221466
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <img src="https://img.icons8.com/ios-filled/24/033747/gmail.png" alt="Email" class="contact-icon">
+                    bayot.danmichael@gmail.com
+                </td>
+            </tr>
+            <tr class="social-media">
+                <td>Social Media</td>
+                <td>
+                    <a href="https://www.facebook.com/dante.bayot.5/">
+                        <img src="https://img.icons8.com/ios-filled/24/033747/facebook.png" alt="Facebook">
+                        Facebook
+                    </a><br>
+                    <a href="https://www.instagram.com/dm.bayot/">
+                        <img src="https://img.icons8.com/ios-filled/24/033747/instagram-new.png" alt="Instagram">
+                        Instagram
+                    </a><br>
+                    <a href="https://github.com/DANMICHAELBAYOT">
+                        <img src="https://img.icons8.com/ios-filled/24/033747/github.png" alt="GitHub">
+                        GitHub
+                    </a><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
