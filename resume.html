@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .container {
+            width: 800px;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+        .button-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        button {
+            padding: 10px;
+            background-color: #033747;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="changeColor()">Change Color</button>
+    </div>
+    <div class="container" id="resume">
+        <div class="header">
+            <div>
+                <h1>Bayot, Dan Michael M.</h1>
+                <p>Address: Manila, Philippines</p>
+                <p>Contact No.: +639398221466</p>
+                <p>Email: bayot.danmichael@gmail.com</p>
+            </div>
+            <img src="./img/Untitled.jpg" alt="Profile Picture">
+        </div>
+        <div class="section">
+            <h2>OBJECTIVE:</h2>
+            <p><span class="bold">Career Growth:</span> To secure a stable and well-paying position in [industry/field], leveraging my skills in [specific skill] and my work ethic to contribute to organizational success while achieving personal and professional growth.</p>
+            <p><span class="bold">Programming Skills:</span> To obtain a role in software development where I can apply and enhance my programming skills, contributing to innovative projects that align with my passion for technology.</p>
+            <p><span class="bold">Design and Writing:</span> Seeking a creative role in design, research, or writing to showcase my expertise and contribute to impactful projects while expanding my professional portfolio.</p>
+            <p><span class="bold">Education and Learning:</span> To work in a dynamic environment that allows me to learn, grow, and graduate to higher responsibilities without compromising on delivering high-quality work.</p>
+            <p><span class="bold">Global Exposure:</span> Aspiring for a role in a global company where I can collaborate with diverse teams and contribute to projects that promote cultural exchange and innovative solutions.</p>
+        </div>
+        <div class="section">
+            <h2>ACADEMIC BACKGROUNDS:</h2>
+            <p><em>Grade School:</em> Cherish Moment School (S.Y 2009-2015)</p>
+            <p><em>Junior High-school:</em> Cherish Moment School (S.Y 2015-2019)</p>
+            <p><em>Undergraduate:</em> University of Pangasinan (S.Y 2020-2023)</p>
+        </div>
+        <div class="section">
+            <h2>SKILLS:</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C++</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let isWhite = true;
+        function changeColor() {
+            const resume = document.getElementById('resume');
+            if (isWhite) {
+                resume.style.backgroundColor = '#FF6F61';
+            } else {
+                resume.style.backgroundColor = 'white';
+            }
+            isWhite = !isWhite;
+        }
+    </script>
+</body>
+</html>
