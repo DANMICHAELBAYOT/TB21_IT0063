@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button class="day-btn" data-day="monday" onclick="changeColor1()">Monday</button>
+        <button class="day-btn" data-day="tuesday"onclick="changeColor2()">Tuesday</button>
+        <button class="day-btn" data-day="wednesday"onclick="changeColor3()">Wednesday</button>
+        <button class="day-btn" data-day="thursday"onclick="changeColor4()">Thursday</button>
+        <button class="day-btn" data-day="friday"onclick="changeColor5()">Friday</button>
+        <button class="day-btn" data-day="saturday"onclick="changeColor6()">Saturday</button>
+        <button class="day-btn" data-day="sunday"onclick="changeColor7()">Sunday</button>
+    </div>
+    <div class="box" id="box"></div>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 10vw;
+            gap: 10px;
+            margin-bottom: 20px;
+        } 
+        
+        
+        .day-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .day-btn:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+            
+        }
+        .box {
+           
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: all 1s ease;
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: example;
+        }
+       
+       
+    </style>
+    <script>
+        function changeColor1(){
+             document.getElementById("box").style.backgroundColor ="blue";
+        }
+        function changeColor2(){
+             document.getElementById("box").style.backgroundColor ="blue";
+        }
+        function changeColor3(){
+             document.getElementById("box").style.backgroundColor ="blue";
+        }
+        function changeColor4(){
+             document.getElementById("box").style.backgroundColor ="blue";
+        }
+        function changeColor5(){
+             document.getElementById("box").style.backgroundColor ="blue";
+        }
+        function changeColor6(){
+             document.getElementById("box").style.backgroundColor ="blue";
+        }
+        function changeColor7(){
+             document.getElementById("box").style.backgroundColor ="blue";
+        }
+    </script>
+
+</body>
+</html>
