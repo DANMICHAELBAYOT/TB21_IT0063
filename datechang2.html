@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 10vw;
+            gap: 10px;
+            margin-bottom: 20px;
+        } 
+        .day-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .day-btn:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+        .day-btn[data-color="violet"] { background-color: violet; }
+        .day-btn[data-color="pink"] { background-color: pink; }
+        .day-btn[data-color="blue"] { background-color: blue; }
+        .day-btn[data-color="yellowgreen"] { background-color: yellowgreen; }
+        .day-btn[data-color="yellow"] { background-color: yellow; }
+        .day-btn[data-color="orange"] { background-color: orange; }
+        .day-btn[data-color="red"] { background-color: red; }
+        .box {
+            width: 500px;
+            height: 500px;
+            border:20px solid #4CAF50;
+            border-radius: 20px;
+            transition: top 1s ease-in-out, background-color 0.5s, transform 1s ease-in-out;
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+        }
+        .box.move {
+            top: 50%;
+            transform: translate(-50%, -50%) scale(1.2);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="day-btn" data-color="violet">Monday</button>
+        <button class="day-btn" data-color="pink" >Tuesday</button>
+        <button class="day-btn" data-color="blue" >Wednesday</button>
+        <button class="day-btn" data-color="yellowgreen" >Thursday</button>
+        <button class="day-btn" data-color="yellow" >Friday</button>
+        <button class="day-btn" data-color="orange" >Saturday</button>
+        <button class="day-btn" data-color="red" >Sunday</button>
+    </div>
+    <div class="box" id="box"></div>
+    <script>
+        document.querySelectorAll('.day-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const box = document.getElementById('box');
+                box.style.display = 'block';
+                box.classList.add('move');
+                box.style.borderColor = this.getAttribute('data-color');
+                setTimeout(() => {
+                    box.classList.remove('move');
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
