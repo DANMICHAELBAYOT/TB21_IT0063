@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Restaurant Guide</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://images.creativemarket.com/0.1.0/ps/4133341/1820/1213/m1/fpnw/wm1/ogtpri9qvpaohgrjboxaq5navucounnzwqkdj0q2hxl39ufi81u4v3epztdrjonw-.jpg?1521046923&s=7e6ee16faf16fbc47713f2b4c2d9330d");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #555;
+}
+
+h3 {
+    color: #007BFF;
+}
+
+.restaurant-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.main-menu {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-menu:hover {
+    background-color: #0056b3;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Best of Merriden</h1>
+        <h2>Restaurant Guide</h2>
+        <p>Produced by: Local Magazine</p>
+        <div class="restaurant-cards">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2 id="modalTitle"></h2>
+                  <p id="modalDescription"></p>
+                </div>
+              </div>
+              
+              <!-- Card Structure -->
+              <div class="card" onclick="openModal('GABEL LOFFEL', 'GABEL LOFFEL is a traditional Scandinavian male name derived from Old Norse, meaning helper or saver, and it has been borne by notable historical figures, such as Swedish statesman Birger Jarl, reflecting its enduring cultural significance in Nordic countries.')">
+                <h3>GABEL LOFFEL</h3>
+                <img src="https://www.daz3d.com/forums/uploads/FileUpload/c1/00eeeb73a20e37db421ae81572e87d.jpg" alt="Gabel Loffel">
+              </div>
+              <div class="card" onclick="openModal('GARY GARI', 'GARY GARI is a refreshing mix of fresh, crisp vegetables and fruits that offers both flavor and nutrition. It typically includes ingredients like lettuce, tomatoes, cucumbers, and carrots, which provide a satisfying crunch. Often dressed with a tangy vinaigrette or a creamy dressing, the salad becomes a versatile side dish or a light main course. The vibrant colors and varied textures make it visually appealing and stimulating to the palate. Additionally, salads can be easily customized with proteins, nuts, or seeds to suit different dietary preferences and tastes.')">
+                <h3>GARY GARI</h3>
+                <img src="https://img.taste.com.au/DHA8eITx/taste/2022/10/easy-italian-pasta-salad-181752-1.jpg" alt="Gary Gari">
+              </div>
+              <div class="card" onclick="openModal('IL PIATTO', 'IL PIATTO is a beloved Italian staple made from durum wheat and water, forming a variety of shapes that serve as the foundation for many dishes. Its neutral flavor allows it to pair beautifully with a wide range of sauces, from classic marinara and rich alfredo to fresh pesto and zesty olive oil blends. Often enhanced with vegetables, meats, or cheeses, pasta dishes can be both hearty and versatile, appealing to diverse palates. The texture of perfectly cooked pasta offers a satisfying bite, making it a comforting meal for many occasions. Simple to prepare yet endlessly adaptable, pasta remains a timeless favorite in kitchens around the world.')">
+                <h3>IL PIATTO</h3>
+                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/RlOjx9ArfntufaYr-vT7XA/l.jpg" alt="Il Piatto">
+              </div>
+              <div class="card" onclick="openModal('PIERRE PLATTERS', 'PIERRE PLATTERS is a versatile meal that typically consists of two slices of bread enclosing a variety of fillings. It can include a mix of meats, cheeses, vegetables, and spreads, creating a harmony of flavors and textures. The beauty of a sandwich lies in its convenience, making it a popular choice for both quick lunches and hearty dinners. Served hot or cold, it caters to different tastes and occasions while offering endless customization options. Overall, a sandwich delivers both comfort and nourishment in a simple, portable format.')">
+                <h3>PIERRE PLATTERS</h3>
+                <img src="https://casabs.github.io/mockup-resto-web/images/platte.jpg" alt="Pierre Platters">
+              </div>
+        </div>
+        <button class="main-menu">Main Menu</button>
+    </div>
+</body>
+<script>function openModal(title, description) {
+    document.getElementById("modalTitle").innerText = title;
+    document.getElementById("modalDescription").innerText = description;
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  document.getElementsByClassName("close")[0].onclick = function() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == document.getElementById("myModal")) {
+      document.getElementById("myModal").style.display = "none";
+    }
+  }</script>
+</html>
